@@ -1,5 +1,6 @@
 // Characters
- mrGreen = {
+
+const mrGreen = {
 first_name:   'Jacob',
 last_name:    'Green',
 color:        'green',
@@ -7,9 +8,10 @@ description:  'He has a lot of connections',
 age:          45,
 image:        'https://pbs.twimg.com/profile_images/506787499331428352/65jTv2uC.jpeg',
 occupation:   'Entrepreneur',
-},
+}
 
- drOrchid = {
+
+const drOrchid = {
 frst_name:   "Doctor",
 lst_name:    "Orchid",
 color:        "white" ,  
@@ -17,9 +19,10 @@ description:  "PhD in plant toxicology. Adopted daughter of Mr. Boddy",
 age:          26,
 image:        "http://www.radiotimes.com/uploads/images/Original/111967.jpg",
 ocupation:   "Scientist",
-},
+}
 
- profPlum = {
+
+const profPlum = {
 first_name:   "Victor",
 last_name:    "Plum",
 color:        "purple",
@@ -27,9 +30,10 @@ description:  "Billionare video game designer",
 age:          22,
 image:        "https://metrouk2.files.wordpress.com/2016/07/professor-plum.jpg",
 occupation:   "Designer",
-},
+}
 
- missScarlet = {
+
+const missScarlet = {
 first_name:   "Kasandra",
 last_name:    "Scarlet",
 color:        "red",
@@ -37,8 +41,9 @@ description:  "She is an A-list movie star with a dark past",
 age:          31,
 image:        "https://metrouk2.files.wordpress.com/2016/07/miss-scarlett.jpg",
 occupation:   "Actor",
-},
- mrsPeacock = {
+}
+
+const mrsPeacock = {
 first_name:   "Eleanor",
 last_name:    "Peacock",
 color:        "blue",
@@ -46,9 +51,10 @@ description:  "She is from a wealthy family and uses her status and money to ear
 age:          36,
 image:        "https://metrouk2.files.wordpress.com/2016/07/mrs-peacock.jpg",
 occupation:   "Socialité",
-},
+}
 
- mrMustard = {
+
+const mrMustard = {
 first_name:   "Jack",
 last_name:    "Mustard",
 color:        "yellow",
@@ -70,43 +76,41 @@ name: bat         ---   weight: 13
 name: trophy      ---   weight: 25
 name: pistol      ---   weight: 20*/
 
+// Rooms
+const diningRoom = {name: "Dinning Room"}
+const conserv = {name: "Conservatory"}
+const kitchen = {name: "Kitchen"}
+const study = {name: "Study"}
+const Library = { name: "Library"}
+const bill = { name: "Billiard Room"}
+const lounge = {name: "Lounge"}
+const ball = {name: "Ballroom"}
+const hall = {name: "Hall"}
+const spa = {name: "Spa"}
+const living = {name: "Living Room"}
+const obs = {name: "Observatory"}
+const theater = {name: "Theater"}
+const guest = {name: "Guest House"}
+const patio = {name: "Patio"}
 
 
 // Characters Collection
 var charactersArray = [];
 
 // Rooms' Collection
-// Rooms
-roomsArray = [
-
-  diningRoom = {name: "Dinning Room"},
-  conserv = {name: "Conservatory"},
-  kitchen = {name: "Kitchen"},
-  study = {name: "Study"},
-  Library = { name: "Library"},
-  bill = { name: "Billiard Room"},
-  lounge = {name: "Lounge"},
-  ball = {name: "Ballroom"},
-  hall = {name: "Hall"},
-  spa = {name: "Spa"},
-  living = {name: "Living Room"},
-  obs = {name: "Observatory"},
-  theater = {name: "Theater"},
-  guest = {name: "Guest House"},
-  patio = {name: "Patio"},
-  ];
+var roomsArray = [];
 
 // Weapons Collection
 var weaponsArray = [
-   rope = { name: "rope", weight: 10 },
-   knife = { name: "knife", weight: 8 },
-   candlestick = { name: "candlestick", weight: 2 },
-   dumbell = { name: "dumbell", wieght: 30 },
-   posion = { name: "poison", weight: 2 },
-   axe = { name: "axe", weight: 15},
-   bat = { name: "bat", wieght: 13},
-   trophy = { name: "trophy", weight: 25},
-   pistol = { name: "pistol", weight: 20}
+    const rope = { name: "rope", weight: 10 };
+    const knife = { name: "knife", weight: 8 };
+    const candlestick = { name: "candlestick", weight: 2 };
+    const dumbell = { name: "dumbell", wieght: 30 };
+    const posion = { name: "poison", weight: 2 };
+    const axe = { name: "axe", weight: 15};
+    const bat = { name: "bat", wieght: 13};
+    const trophy = { name: "trophy", weight: 25};
+    const pistol = { name: "pistol", weight: 20};
   ];
 
   function randomSelector (arr) {
