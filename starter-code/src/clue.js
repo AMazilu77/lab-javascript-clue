@@ -1,140 +1,169 @@
 // Characters
- mrGreen = {
-first_name:   'Jacob',
-last_name:    'Green',
-color:        'green',
-description:  'He has a lot of connections',
-age:          45,
-image:        'https://pbs.twimg.com/profile_images/506787499331428352/65jTv2uC.jpeg',
-occupation:   'Entrepreneur',
-},
 
- drOrchid = {
-frst_name:   "Doctor",
-lst_name:    "Orchid",
-color:        "white" ,  
-description:  "PhD in plant toxicology. Adopted daughter of Mr. Boddy",
-age:          26,
-image:        "http://www.radiotimes.com/uploads/images/Original/111967.jpg",
-ocupation:   "Scientist",
-},
+Characters = [
 
- profPlum = {
-first_name:   "Victor",
-last_name:    "Plum",
-color:        "purple",
-description:  "Billionare video game designer",
-age:          22,
-image:        "https://metrouk2.files.wordpress.com/2016/07/professor-plum.jpg",
-occupation:   "Designer",
-},
-
- missScarlet = {
-first_name:   "Kasandra",
-last_name:    "Scarlet",
-color:        "red",
-description:  "She is an A-list movie star with a dark past",
-age:          31,
-image:        "https://metrouk2.files.wordpress.com/2016/07/miss-scarlett.jpg",
-occupation:   "Actor",
-},
- mrsPeacock = {
-first_name:   "Eleanor",
-last_name:    "Peacock",
-color:        "blue",
-description:  "She is from a wealthy family and uses her status and money to earn popularity",
-age:          36,
-image:        "https://metrouk2.files.wordpress.com/2016/07/mrs-peacock.jpg",
-occupation:   "Socialité",
-},
-
- mrMustard = {
-first_name:   "Jack",
-last_name:    "Mustard",
-color:        "yellow",
-description:  "He is a former football player who tries to get by on his former glory",
-age:          62,
-image:        "https://metrouk2.files.wordpress.com/2016/07/colonel-mustard.jpg",
-occupation:   "Retired Football player",
-}
-
-// Weapons
-
-/*name: rope        ---   weight: 10
-name: knife       ---   weight: 8
-name: candlestick ---   weight: 2
-name: dumbbell    ---   weight: 30
-name: poison      ---   weight: 2
-name: axe         ---   weight: 15
-name: bat         ---   weight: 13
-name: trophy      ---   weight: 25
-name: pistol      ---   weight: 20*/
-
-
-
-// Characters Collection
-var charactersArray = [];
-
-// Rooms' Collection
-// Rooms
-roomsArray = [
-
-  diningRoom = {name: "Dinning Room"},
-  conserv = {name: "Conservatory"},
-  kitchen = {name: "Kitchen"},
-  study = {name: "Study"},
-  Library = { name: "Library"},
-  bill = { name: "Billiard Room"},
-  lounge = {name: "Lounge"},
-  ball = {name: "Ballroom"},
-  hall = {name: "Hall"},
-  spa = {name: "Spa"},
-  living = {name: "Living Room"},
-  obs = {name: "Observatory"},
-  theater = {name: "Theater"},
-  guest = {name: "Guest House"},
-  patio = {name: "Patio"},
-  ];
-
-// Weapons Collection
-var weaponsArray = [
-   rope = { name: "rope", weight: 10 },
-   knife = { name: "knife", weight: 8 },
-   candlestick = { name: "candlestick", weight: 2 },
-   dumbell = { name: "dumbell", wieght: 30 },
-   posion = { name: "poison", weight: 2 },
-   axe = { name: "axe", weight: 15},
-   bat = { name: "bat", wieght: 13},
-   trophy = { name: "trophy", weight: 25},
-   pistol = { name: "pistol", weight: 20}
-  ];
-
-  function randomSelector (arr) {
-      theELement+arr[Math.floor( Math.random()*arr.length)]
-      return theELement;
-  }
-
-  function randomMystery(characters, weapons, rooms) {
-      let mystery = [];
-      mystery.push(randomSelector(characters));
-      mystery.push(randomSelector(weapons));
-      mystery.push(randomSelector(rooms));
-      return randomMystery;
-  }
-
-
-
-
-/* parameters:
-envelope: this is an array of 3 elements containing characters, weapons, rooms
-return:
-returns an answer string*/
-
-  function revealMystery(enveolope) {
+    mrGreen = {
+       first_name:   'Jacob',
+       last_name:    'Green',
+       color:        'green',
+       description:  'He has a lot of connections',
+       age:          45,
+       image:        'https://pbs.twimg.com/profile_images/506787499331428352/65jTv2uC.jpeg',
+       occupation:   'Entrepreneur',
+       },
+       
+       
+        drOrchid = {
+       frst_name:   "Doctor",
+       lst_name:    "Orchid",
+       color:        "white" ,  
+       description:  "PhD in plant toxicology. Adopted daughter of Mr. Boddy",
+       age:          26,
+       image:        "http://www.radiotimes.com/uploads/images/Original/111967.jpg",
+       ocupation:   "Scientist",
+       },
+       
+       
+        profPlum = {
+       first_name:   "Victor",
+       last_name:    "Plum",
+       color:        "purple",
+       description:  "Billionare video game designer",
+       age:          22,
+       image:        "https://metrouk2.files.wordpress.com/2016/07/professor-plum.jpg",
+       occupation:   "Designer",
+       },
+       
+       
+        missScarlet = {
+       first_name:   "Kasandra",
+       last_name:    "Scarlet",
+       color:        "red",
+       description:  "She is an A-list movie star with a dark past",
+       age:          31,
+       image:        "https://metrouk2.files.wordpress.com/2016/07/miss-scarlett.jpg",
+       occupation:   "Actor",
+       },
+       
+        mrsPeacock = {
+       first_name:   "Eleanor",
+       last_name:    "Peacock",
+       color:        "blue",
+       description:  "She is from a wealthy family and uses her status and money to earn popularity",
+       age:          36,
+       image:        "https://metrouk2.files.wordpress.com/2016/07/mrs-peacock.jpg",
+       occupation:   "Socialité",
+       },
+       
+       
+       mrMustard = {
+       first_name:   "Jack",
+       last_name:    "Mustard",
+       color:        "yellow",
+       description:  "He is a former football player who tries to get by on his former glory",
+       age:          62,
+       image:        "https://metrouk2.files.wordpress.com/2016/07/colonel-mustard.jpg",
+       occupation:   "Retired Football player",
+       }];
+       
+       // Weapons
+       
+       Weapons = [ 
    
- let answer = "<firstname> <lastname>  killed Mr.Boddy using the <weapon> in the <room>"
-    answer = answer.replace('<First Name>'), enveolope[0].first_name);
-    answer = answer.replace('<First Name>'), enveolope[0].last_name);
-    answer = answer.replace('<First Name>'), enveolope[1].name);
-    answer = answer.replace('<First Name>'), enveolope[2].name);
-  }
+       {name: 'rope',          weight: 10},
+       {name: 'knife',         weight: 8},
+       {name: 'candlestick',   weight: 2},
+       {name: 'dumbbell',      weight: 30},
+       {name: 'poison',        weight: 2},
+       {name: 'axe',            weight: 15},
+       {name: 'bat',           weight: 13},
+       {name: 'trophy',         weight: 25},
+       {name: 'pistol',         weight: 20},
+       ];
+       
+       // Rooms
+       Rooms = [ 
+        diningRoom = {name: "Dinning Room"},
+        conserv = {name: "Conservatory"},
+        kitchen = {name: "Kitchen"},
+        study = {name: "Study"},
+        Library = { name: "Library"},
+        bill = { name: "Billiard Room"},
+        lounge = {name: "Lounge"},
+        ball = {name: "Ballroom"},
+        hall = {name: "Hall"},
+        spa = {name: "Spa"},
+        living = {name: "Living Room"},
+        obs = {name: "Observatory"},
+        theater = {name: "Theater"},
+        guest = {name: "Guest House"},
+        patio = {name: "Patio"},
+       ];
+       
+       
+       // Characters Collection
+       let charactersArray = [];
+       Characters.forEach(element => {
+           charactersArray.push(element);
+       });
+       
+       // Rooms' Collection
+       let roomsArray = [];
+       Rooms.forEach(element => {
+           roomsArray.push(element);
+       });
+       
+       // Weapons Collection
+       let weaponsArray = [];
+       Weapons.forEach(element => {
+           weaponsArray.push(element);
+       });
+       
+        function randomSelector(arr) {
+            theELement = arr[Math.floor( Math.random()*arr.length)];
+            return theELement;
+        }
+   
+   
+   
+   
+       
+       // function randomMystery(characters, weapons, rooms) {
+       //     let mystery = [];
+       //     mystery.push(randomSelector(characters));
+       //     mystery.push(randomSelector(weapons));
+       //     mystery.push(randomSelector(rooms));
+       //     return mystery;
+       //   }
+   
+    
+        function randomMystery() {
+           let myArr = [];
+            let character = randomSelector(charactersArray);
+            let weapon = randomSelector(weaponsArray);
+            let room = randomSelector(roomsArray);
+           myArr.push(character,weapon,room);
+   
+          return myArr;
+        }
+       
+       function revealMystery(hypo) {
+         return hypo[0].first_name + " " + hypo[0].last_name + " Killed Mr.Boddy using the " + hypo[1].name + " in the " + hypo[2].name;
+         }
+       
+       
+       
+       /* parameters:
+       envelope: this is an array of 3 elements containing characters, weapons, rooms
+       return:
+       returns an answer string*/
+   let enveolope = randomMystery();
+       
+        console.log(revealMystery(enveolope));
+        
+       // let answer = "<firstname> <lastname>  killed Mr.Boddy using the <weapon> in the <room>";
+       //   answer = answer.replace('<First Name>'), enveolope[0].first_name;
+       //   answer = answer.replace('<First Name>'), enveolope[0].last_name;
+       //   answer = answer.replace('<First Name>'), enveolope[1].name;
+       //   answer = answer.replace('<First Name>'), enveolope[2].name;
+       // };
